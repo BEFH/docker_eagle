@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM debian:buster-slim
 RUN wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/Eagle_v2.4.1.tar.gz && \
   mkdir /tables && \
   tar -xf Eagle_v2.4.1.tar.gz && \
