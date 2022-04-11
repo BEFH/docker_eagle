@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 RUN apt-get update && \
-  apt-get install -y wget && \
+  apt-get install -y wget libc6 libgomp1 && \
   apt-get clean && \
   wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/Eagle_v2.4.1.tar.gz && \
   mkdir /tables && \
