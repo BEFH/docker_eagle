@@ -1,5 +1,8 @@
 FROM debian:buster-slim
-RUN wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/Eagle_v2.4.1.tar.gz && \
+RUN apt-get update && \
+  apt-get install -y wget && \
+  apt-get clean &&
+  wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/Eagle_v2.4.1.tar.gz && \
   mkdir /tables && \
   tar -xf Eagle_v2.4.1.tar.gz && \
   mv Eagle_v2.4.1/eagle /usr/bin/ && \
