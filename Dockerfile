@@ -3,7 +3,7 @@ RUN wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/
   mkdir /tables && \
   tar -xf Eagle_v2.4.1.tar.gz && \
   mv Eagle_v2.4.1/eagle /usr/bin/ && \
-  mv Eagle_v2.4.1/tables/genetic_map_hg19_withX.txt.gz ./ && \
+  ls -l Eagle_v2.4.1/tables/ && \
   mv Eagle_v2.4.1/tables/genetic_map_hg19_withX.txt.gz ./ && \
   rm -rf Eagle_v2.4.1.tar.gz Eagle_v2.4.1
 ENTRYPOINT ["eagle"]
